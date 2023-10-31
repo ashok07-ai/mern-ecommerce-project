@@ -36,7 +36,7 @@ export default function Cart() {
 
   return (
     <>
-      <div className="mx-auto mt-12 bg-white max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto mt-12 bg-white max-w-7xl px-0 sm:px-0 lg:px-0">
         <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
           <h1 className="text-3xl my-3 font-bold tracking-tight text-gray-900">Cart</h1>
 
@@ -96,12 +96,14 @@ export default function Cart() {
           </div>
           <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
           <div className="mt-6">
-            <a
-              href="#"
-              className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-            >
-              Checkout
-            </a>
+            <Link to="/checkout">
+              <a
+                href="#"
+                className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+              >
+                Checkout
+              </a>
+            </Link>
           </div>
           <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
             <p>
